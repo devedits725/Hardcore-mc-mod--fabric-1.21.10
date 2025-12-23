@@ -1,0 +1,25 @@
+plugins {
+    id 'fabric-loom' version '1.7-SNAPSHOT'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.opencollab.dev/main" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.10"
+    mappings "net.fabricmc:yarn:1.21.10+build.1:v2"
+
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:+"
+
+    modImplementation "org.geysermc.floodgate:api:2.2.3"
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
