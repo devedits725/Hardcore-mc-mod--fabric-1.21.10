@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "hardcorehybrid",
+  "version": "1.0.0",
+  "name": "Hardcore Hybrid",
+  "description": "Java = Spectator, Bedrock = Ban (Hardcore for Geyser)",
+  "authors": ["You"],
+  "environment": "server",
+  "entrypoints": {
+    "main": ["com.example.hardcorehybrid.HardcoreHybridMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.10",
+    "fabric-api": "*",
+    "floodgate": "*"
+  }
+}
